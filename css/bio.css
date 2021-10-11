@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  --webkit-box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* small screen---------------------- */
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* meduim screen---------------------- */
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* large screen ---------------------*/
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* ----------------------------end global -----------------------*/
+.bio{
+  background-color: #ddebee;
+}
+.bio .container {
+  min-height: 100vh;
+}
+.bio .container header{
+  display: flex;
+  justify-content: center;
+}
+.bio .container header img{
+  width: 50%;
+}
+.bio .container .landing{
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  direction: rtl;
+
+}
+.bio .container .landing div{
+  width: calc(80% / 4);
+  margin-right: 20px;
+}
+.bio .container .landing div img{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+.bio .container .landing div:nth-child(3) img {
+  width: 20%;
+  margin-right: 40%;
+
+}
+.bio .container .landing div a{
+  text-decoration: none;
+  padding: 0;
+}
+.bio .container .landing div a:hover p{
+  transform: scale(.95);
+  filter: grayscale(.6);
+}
+.bio .container .landing div p{
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px 25px;
+  font-size: 1.9em;
+  background-image: url("/image/font\ BG.png");
+  background-position: center;
+  background-size:cover;
+  font-family: 'Mada', sans-serif;
+  font-weight: 800;
+  text-shadow: 1px 2px 1px #696767;
+  color: #fc61c3;
+  transition: .3s;
+
+  }
+  
+  /* meduim screen---------------------- */
+  @media (max-width: 991px) {
+    .bio .container .landing{
+      margin-top: 50px;
+    }
+    .bio .container .landing div{
+      width: calc(80% / 2);
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .bio .container .landing div{
+      width: 80% ;
+      margin-right: 0;
+      margin-bottom: 85px;
+    }
+    .bio .container header img{
+      width: 70%;
+      margin-bottom: 10px;
+    }
+    .bio .container header {
+      border-bottom: 1px solid #555;
+    }
+  }
